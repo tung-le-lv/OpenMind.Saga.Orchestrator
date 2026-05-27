@@ -165,7 +165,7 @@ dotnet run --urls=http://localhost:5004
 docker-compose up --build
 ```
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Step 1: Create Order (Order Service - Port 5001)
 ```bash
@@ -232,7 +232,7 @@ The services include built-in simulation for testing:
 
 Run multiple order requests to see different workflow paths execute.
 
-## 🔧 Configuration
+## Configuration
 
 ### MongoDB Connection
 Each service has its own database:
