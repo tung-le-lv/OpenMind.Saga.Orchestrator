@@ -2,7 +2,7 @@
 
 A comprehensive implementation of the **Saga Orchestrator Pattern** for distributed transactions in a microservices architecture.
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 This solution implements an **Order Placement Orchestrator** that coordinates a distributed transaction across multiple microservices:
 
@@ -58,7 +58,7 @@ This solution implements an **Order Placement Orchestrator** that coordinates a 
 └─────────────────────────┘
 ```
 
-## 🚀 Features
+## Features
 
 ### Saga Orchestrator Pattern
 - **Centralized Workflow Management**: Single point of control for the entire order placement process
@@ -88,7 +88,7 @@ Each service follows Clean Architecture with:
 - **FluentValidation** for request validation
 - **Serilog** for structured logging
 
-## 🔄 Workflow Scenarios
+## Workflow Scenarios
 
 ### Happy Path
 1. **Create Order** → Order is created in Order Service (stored in MongoDB)
@@ -118,7 +118,7 @@ Each service follows Clean Architecture with:
 7. **Send Notification** → Email customer about backorder & refund
 8. **Cancel** → Saga ends with cancelled state
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - .NET 10 SDK
@@ -223,7 +223,7 @@ GET http://localhost:5003/health   # Fulfillment
 GET http://localhost:5004/health   # Email
 ```
 
-## 🧪 Simulating Different Scenarios
+## Simulating Different Scenarios
 
 The services include built-in simulation for testing:
 - **Payment Service**: 90% success rate (10% random failures)
@@ -245,7 +245,7 @@ Each service has its own database:
 }
 ```
 
-## 📚 Key Concepts
+## Key Concepts
 
 ### Saga State Machine States
 - `Initial` - Starting state
@@ -274,10 +274,10 @@ Events (to Orchestrator):
 - `OrderShippedEvent` / `FulfillmentFailedEvent`
 - `EmailSentEvent`
 
-## 📝 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## 👥 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
